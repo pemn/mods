@@ -16,5 +16,6 @@ for(var objEnum = new Enumerator(fc); !objEnum.atEnd(); objEnum.moveNext()) {
   var m = re1.exec(name);
   if (m) {
     WScript.Echo(m);
+    fso.MoveFile(objEnum.item().Name, "tmp_" + objEnum.item().Name);
   }
 }
