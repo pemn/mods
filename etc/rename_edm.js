@@ -23,6 +23,5 @@ for(var objEnum = new Enumerator(fc); !objEnum.atEnd(); objEnum.moveNext()) {
     }
     WScript.Echo(rename);
     objEnum.item().Move(rename);
-    //fso.MoveFile(objEnum.item().Name, "tmp_" + objEnum.item().Name);
   }
 }
