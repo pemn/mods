@@ -2,15 +2,15 @@
 experimental mods
 # image markdown test
 
-![textmate](https://raw.github.com/textmate/textmate/gh-pages/images/screenshot.png)  
+![textmatea](https://raw.github.com/textmate/textmate/gh-pages/images/screenshot.png)  
 
-![textmatea](textmate.png)  
+![textmateb](https://raw.github.com/pemn/mods/textmate.png)  
 
-![textmateb](textmate.png?raw=true)  
+![textmatec](textmate.png)  
 
-![textmatec](https://raw.github.com/pemn/mods/textmate.png)  
+![textmated](textmate.png?raw=true)  
 
-![textmated](https://github.com/pemn/mods/textmate.png?raw=true)  
+![textmatee](https://github.com/pemn/mods/textmate.png?raw=true)  
 
 ![osi1](images/osi_keyhole.png)  
 
