@@ -10,6 +10,6 @@ Copy the js source code and paste on console.
 Use this code that will read the plugin directly from github:
 ```
 var script = document.createElement('script');
-script.src = "http://localhost/ascw.js"
+script.src = "https://github.com/pemn/mods/blob/master/pu/ascw.js?raw=true"
 document.head.appendChild(script);
 ```
