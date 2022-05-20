@@ -20,7 +20,6 @@ var ASCW = {
             this.hash.push(text);
             console.log(text);
             if (this.n) {
-                //this.beep();
                 this.talk(text.match("@ \\d+")[0])
             }
             this.n = false;
@@ -41,8 +40,8 @@ var ASCW = {
 		}
 	},
     stop: function() {
+        this.hash.length = 0;
         this.active = false;
     }
 }
-console.log("ASCW loop");
 ASCW.loop();
