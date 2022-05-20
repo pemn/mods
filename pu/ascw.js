@@ -41,6 +41,7 @@ var ASCW = {
 	},
     stop: function() {
         this.hash.length = 0;
+        this.n = false;
         this.active = false;
     }
 }
