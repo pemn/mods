@@ -1,6 +1,6 @@
 // apex shipping contract watcher
 var ASCW = {
-    active: true, n: false, hash: [],
+    t: false, n: false, hash: [],
     talk: function(text) {
         speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     },
@@ -23,17 +23,16 @@ var ASCW = {
             }
         }
         this.n = true;
-        if (this.active) {
-            setTimeout(this.loop.bind(this), 9999);
-        } else {
-            this.talk("*");
-            this.n = false;
-            this.active = true;
-            this.hash.length = 0;
-        }
+        this.t = setTimeout(this.loop.bind(this), 9999);
     },
     stop: function() {
-        this.active = false;
+        if (this.t) {
+            clearTimeout(this.t);
+            this.t = false;
+            this.talk("*");
+        }
+        this.n = false;
+        this.hash.length = 0;
     }
 }
 ASCW.loop();
