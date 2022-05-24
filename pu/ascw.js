@@ -1,12 +1,12 @@
 // apex shipping contract watcher
 var ASCW = {
-    t: false, n: false, hash: [],
+    t: false, n: false, d: [],
     talk: function(text) {
         speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     },
     look: function(text) {
-        if (! this.hash.includes(text)) {
-            this.hash.push(text);
+        if (! this.d.includes(text)) {
+            this.d.push(text);
             console.log(text);
             if (this.n) {
                 let m = text.match("@ ([^. ]+)[^\(]+.([^\)]+)")
@@ -32,7 +32,7 @@ var ASCW = {
             this.talk("*");
         }
         this.n = false;
-        this.hash.length = 0;
+        this.d.length = 0;
     }
 }
 ASCW.loop();
