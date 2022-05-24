@@ -9,8 +9,8 @@ var ASCW = {
             this.hash.push(text);
             console.log(text);
             if (this.n) {
-                let m = text.match("@ [^. ]+")
-                if (m) this.talk(m[0]);
+                let m = text.match("@ ([^. ]+)[^\(]+.([^\)]+)")
+                if (m) this.talk("+ " + m[2] + " = " + m[1]);
             }
             this.n = false;
         }
@@ -26,7 +26,7 @@ var ASCW = {
         if (this.active) {
             setTimeout(this.loop.bind(this), 9999);
         } else {
-            this.talk("beep");
+            this.talk("*");
             this.n = false;
             this.active = true;
             this.hash.length = 0;
