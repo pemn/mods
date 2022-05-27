@@ -13,6 +13,8 @@ var script = document.createElement('script');
 script.src = "https://github.com/pemn/mods/blob/master/pu/ascw.js?raw=true"
 document.head.appendChild(script);
 ```
+## How to use
+The game must be in a screen that shows shipping contracts in the LMs you are interested in. Preferably only the shipping contrats (no sell and buy).
 ## Stop
 To stop the watcher enter:  
 `ASCW.stop()`  
