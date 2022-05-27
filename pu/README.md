@@ -15,6 +15,6 @@ document.head.appendChild(script);
 ```
 ## Stop
 To stop the watcher enter:  
-`ASCW.stop()`
-To start again:
-`ASCW.loop()`
+`ASCW.stop()`  
+To start again:  
+`ASCW.loop()`  
