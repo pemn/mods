@@ -13,3 +13,8 @@ var script = document.createElement('script');
 script.src = "https://github.com/pemn/mods/blob/master/pu/ascw.js?raw=true"
 document.head.appendChild(script);
 ```
+## Stop
+To stop the watcher enter:  
+`ASCW.stop()`
+To start again:
+`ASCW.loop()`
