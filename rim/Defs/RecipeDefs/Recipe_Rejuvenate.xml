@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="SurgeryFlesh">
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<defName>Rejuvenate</defName>
+		<label>rejuvenate</label>
+		<description>Rejuvenates a tenth of the current biological age.</description>
+		<workerClass>Recipe_Rejuvenate</workerClass>
+		<jobString>Rejuvenating.</jobString>
+		<workAmount>5000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

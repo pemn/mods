@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rejuvenate Surgery</name>
+	<author>Ethereal</author>
+    <packageId>Ethereal.Rejuvenate.Surgery</packageId>
+    <supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
+        <li>1.2</li>
+        <li>1.3</li>
+        <li>1.4</li>
+        <li>1.5</li>
+    </supportedVersions>
+	<description>Adds the Rejuvenate surgery, a way to reduce your colonists biological age.
+On success the procedure will make the patient 10% younger.
+For players who want to take their time and create the perfect colony. 
+Also eases matchmaking since if age difference > 10 years colonists are much less likely to become lovers.
+This advanced procedure can only be performed by a Skilled Professional (10) and requires two glitterworld Medicines.
+The colonist Medical Care setting must allow use of glitterworld medicines.
+Only works on human colonists, not animals.
+A very small chance of failure exists, with the effect of ageing twice as much instead.
+</description>
+</ModMetaData>
